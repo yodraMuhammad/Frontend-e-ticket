@@ -74,7 +74,7 @@ export default function Login() {
 
           <Divider w={ "90%" } />
 
-          <Text onPress={ onToggleAuthMode } fontSize={ 16 } underline>
+          <Text onPress={ onToggleAuthMode } fontSize={ 16 } underline disabled={isLoadingAuth}>
             { authMode === 'login' ? 'Register new account' : 'Login to account' }
           </Text>
 
